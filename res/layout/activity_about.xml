@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp" >
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+        
+    
+        
+    <TextView 
+        android:id="@+id/about"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="GauchoShout is a mobile application made for UCSB students, by UCSB students.
+        \n\nHave a story from your crazy time in Isla Vista last night? Post it here for others to read!
+        \nNeed advice for school? Ask them and have other students respond! 
+        \nOr maybe you just need to SHOUT your thoughts... 
+        \n\nAll of this can be done with GauchoShout. The best part is that you can choose to post as yourself or anonymously. 
+        \n\nSo go ahead. Shout away, Gauchos!
+        \n\n============
+        \nThe GauchoShout Team
+        \n
+        \nAdrian Arcilla
+        \nAustin Tajiri
+        \nMike Soennichsen
+        \nRicky Martinez
+        \nSpenser Haigh" />
+     <Button 
+        android:id="@+id/coolbeans_btn"
+       	android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="@string/cool_beans"
+          />
+    
+	</LinearLayout>
+</ScrollView>

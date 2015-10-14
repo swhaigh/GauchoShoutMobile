@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action">#194876</color>
+    <color name="background">#36393C</color>
+    <color name="actionbar_title">#F8FA71</color>
+    <color name="button_color_highlight">#79C0D6</color>
+    <color name="button_color">#1A8CC0</color>
+	<color name="buttontext_color">#084B8A</color>
+	<color name="yellow">#F5F6CE</color>
+	<color name="dark">#2F2D2D</color>
+	<color name="light">#FBF8EF</color>
+	<color name="black">#000000</color>
+	<color name="bright">#81BEF7</color>
+	<color name="white">#FFFFFF</color>
+	<color name="red">#F7819F</color>
+</resources>

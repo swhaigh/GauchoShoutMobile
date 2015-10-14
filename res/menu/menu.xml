@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_add"
+        android:title="@string/add_label" 
+        android:icon="@android:drawable/ic_input_add"
+        android:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_refresh"
+        android:title="@string/refresh_label"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:showAsAction="ifRoom" />
+     <item android:id="@+id/menu_logout"
+        android:title="@string/logout_label" 
+        android:icon="@android:drawable/ic_lock_power_off"/>
+     <item android:id="@+id/menu_about"
+        android:title="@string/about_label" 
+        android:icon="@android:drawable/ic_dialog_info"/>
+</menu>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/dark"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+         
+	    <ImageView
+	        android:src="@drawable/gs"
+	        android:contentDescription="@string/desc"
+        	android:id="@+id/actionbar_title"
+        	android:background="@color/black"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:layout_marginTop="0dp" />
+		
+<!-- register header -->		
+ 		<TextView
+ 		   	android:layout_width="fill_parent"
+ 		   	android:layout_height="wrap_content"
+ 	    	android:background="@color/buttontext_color"
+ 	    	android:layout_gravity="left"
+		    android:text="@string/register_text"
+ 		   	android:textColor="@color/yellow"
+ 		   	android:paddingTop="5dp"
+ 		   	android:paddingBottom="5dp"
+ 		   	android:textSize="30sp" />
+         
+      	<LinearLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:layout_marginTop="20dp"
+  			android:orientation="horizontal" 
+  			android:layout_marginBottom="20dp"  
+  			android:weightSum="1"> 
+     
+	  	    <TextView 
+	  	        android:id="@+id/username_error"
+	    	    android:visibility="invisible"
+	        	android:layout_width="0dp"
+	       		android:layout_height="wrap_content"
+	       		android:layout_weight="0.075"
+	       		android:textColor="@color/red"
+	       		android:textSize="20sp"
+	       		android:text="@string/asterisk"  />
+	  	    
+	    	 <TextView 
+	          	android:layout_width="0dp"
+	          	android:layout_height="wrap_content"
+	          	android:layout_weight="0.2"
+				android:text="@string/username"   />
+	    	 
+	    	 
+			<View 
+	        	android:layout_height="0dp"
+	         	android:layout_width="0dp"
+	         	android:layout_weight="0.025"   />  
+	              
+	     	<EditText android:id="@+id/desired_username"
+	         	android:layout_width="0dp"
+	         	android:layout_height="wrap_content"
+	         	android:layout_weight="0.65"
+	      		android:imeOptions="actionGo"
+	      		android:inputType="text"
+	      		android:textSize="20sp"
+	      		android:hint="@string/username_hint" />
+     	
+		</LinearLayout>   
+         
+         <!-- password -->
+	    <LinearLayout         
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	   		android:layout_marginBottom="20dp"  
+	  	 	android:weightSum="1">
+	     	
+	     	<TextView 
+	       		android:id="@+id/password_error"
+	       		android:visibility="invisible"
+	           	android:layout_width="0dp"
+	           	android:layout_height="wrap_content"
+	      		android:layout_weight="0.075"
+	      		android:textColor="@color/red"
+	       		android:textSize="20sp"
+	           	android:text="@string/asterisk"   />
+	     	
+	    	<TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.2"
+				android:text="@string/password"   />
+	    	
+	        <View 
+			    android:layout_height="0dp"
+			    android:layout_width="0dp"
+		        android:layout_weight="0.025"   />
+	        
+	       	<EditText 
+	       	    android:id="@+id/first_password"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.65"
+		       	android:imeOptions="actionGo"
+		        android:inputType="textPassword"
+		        android:textSize="20sp"
+		        android:hint="@string/password_hint" />       
+	     </LinearLayout>
+	     
+	<!-- password confirmation -->
+	 	<LinearLayout 
+	 		android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" 
+			android:layout_marginBottom="20dp"  
+			android:weightSum="1">
+	       	
+	 	    <TextView 
+	       		android:id="@+id/password2_error"
+	   	        android:visibility="invisible"
+	       		android:layout_width="0dp"
+	       		android:layout_height="wrap_content"
+	       		android:layout_weight="0.075"
+	       		android:textColor="@color/red"
+	       		android:textSize="20sp"
+	       		android:text="@string/asterisk"   />
+	 	    
+	   		<TextView   
+	         	android:layout_width="0dp"
+	         	android:layout_height="70dp"
+	         	android:layout_weight="0.2"
+				android:text="@string/password_match_check"   />   
+				
+	         <View 
+	       		android:layout_height="0dp"
+	       		android:layout_width="0dp"
+	       		android:layout_weight="0.025"   />  
+	       		  
+	    	<EditText android:id="@+id/password_match_atempt"
+	        	android:layout_width="0dp"
+	         	android:layout_height="wrap_content"
+	         	android:layout_weight="0.65"
+	     		android:imeOptions="actionGo"
+	     		android:inputType="textPassword"
+	     		android:textSize="20sp"
+	     		android:hint="@string/password_hint" /> 
+	     		       
+	   	</LinearLayout>  
+	 
+	 <!--  Email -->
+		<LinearLayout 
+	    	android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:orientation="horizontal" 
+	  		android:layout_marginBottom="20dp"  
+	  		android:weightSum="1">
+	  	    <TextView 
+	        	android:id="@+id/email_error"
+	    	    android:visibility="invisible"
+	        	android:layout_width="0dp"
+	        	android:layout_height="wrap_content"
+	        	android:layout_weight="0.075"
+	        	android:textColor="@color/red"
+	        	android:textSize="20sp"
+	        	android:text="@string/asterisk"   />
+	  	    
+	     	<TextView   
+	         	android:layout_width="0dp"
+	         	android:layout_height="wrap_content"
+	         	android:layout_weight="0.2"
+				android:text="@string/email"   />  
+	  		<View 
+	        	android:layout_height="0dp"
+	        	android:layout_width="0dp"
+	        	android:layout_weight="0.025"   /> 
+	        	
+	    	<EditText 
+	         	android:id="@+id/new_user_email"
+	         	android:layout_width="0dp"
+	         	android:layout_height="wrap_content"
+	         	android:layout_weight="0.65"
+	     		android:imeOptions="actionGo"
+	     		android:inputType="textEmailAddress"
+	     		android:textSize="20sp"
+	   			android:hint="@string/email_hint" />
+	 	</LinearLayout>
+	 
+	 	<TextView
+	 		android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+		    android:background="@color/buttontext_color"
+		    android:layout_gravity="left"
+		    android:text="@string/about_you_text"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+		    android:textColor="@color/yellow"
+		    android:textSize="30sp" />
+	
+	 <!-- gender -->
+	   
+	   <LinearLayout 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"  
+	    	android:orientation="horizontal" >   
+	    	   
+	     	<TextView   
+	     	    android:id="@+id/gender_error"
+	       	    android:visibility="invisible"
+	     		android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	   			android:textColor="@color/red"
+	   			android:textSize="20sp"
+	   			android:text="@string/asterisk" />  
+	   			 
+	    	<TextView   
+	     		android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/gender_prompt"  />  
+					    
+		</LinearLayout>
+	     
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginBottom="20dp"  
+			android:orientation="horizontal">
+	
+	    	<RadioButton
+	       		android:id="@+id/male_gender"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:text="@string/male_text"
+	        	android:layout_marginTop="10dp"
+	        	android:textSize="12sp"
+	        	android:paddingRight="50dp"
+	        	android:layout_marginLeft="50dp"  />
+	    
+	        <RadioButton
+	       		android:id="@+id/female_gender"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:text="@string/female_text"
+	        	android:layout_marginTop="10dp"
+	        	android:textSize="12sp"  />
+	    
+		</LinearLayout>
+	        
+	    <TextView   
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:text="@string/about_you_prompt"   />    
+	     
+	    <EditText 
+	        android:id="@+id/about_you"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="45dp"
+			android:layout_marginRight="45dp"
+			android:layout_marginBottom="15dp"
+	        android:layout_marginTop="15dp"
+	        android:inputType="text"
+	        android:minHeight="50dp"
+	        android:textSize="11sp"
+	        android:hint="@string/about_you_hint"   />  
+	   
+	     <TextView
+	   		android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"  
+	   		android:background="@color/buttontext_color"
+	   		android:layout_gravity="left"
+	   		android:text="@string/notification_text"
+	   		android:paddingTop="5dp"
+	   		android:paddingBottom="5dp"
+	   		android:textColor="@color/yellow"
+	   		android:textSize="30sp" />
+	    
+	    <CheckBox
+	   		android:id="@+id/receive_email_checkbox"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/spam_my_inbox"
+	        android:layout_marginTop="10dp"
+	        android:textSize="12sp"  />
+	    
+	    
+	
+	    <Button
+	        android:id="@+id/new_user_accept_btn"
+	        android:layout_marginTop="35dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="250dp"
+	        android:layout_height="35dp"
+			android:layout_gravity="center_horizontal"
+	        android:background="@color/button_color"
+	        android:text="@string/create_profile_button_text"  />
+	    
+	    <Button 
+	        android:id="@+id/to_login_screen"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="35dp"
+	        android:layout_width="250dp"
+	        android:layout_height="35dp"
+			android:layout_gravity="center_horizontal"
+	        android:background="@color/button_color"
+	        android:text="@string/to_login_screen_btn"  />
+
+	</LinearLayout>
+
+</ScrollView>

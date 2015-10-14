@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gaucho Shout</string>
+    <string name="hash_tag_name">#GauchoShout</string>
+    <string name="questions_label">Question</string>
+    <string name="stories_label">Story</string>
+    <string name="shout_label">Shout</string>
+    <string name="desc">desc</string>
+    <string name="refresh_label">Refresh</string>
+    <string name="logout_label">Logout</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="username_hint">username</string>
+    <string name="password_hint">password</string>
+    <string name="about_label">About</string>
+    <string name="login_btn_text">Login</string>
+    <string name="add_label">Add Post</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="new_usr_text">New User</string>
+    <string name="title">Title</string>
+    <string name="submit">submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="body">Body</string>
+    <string name="cool_beans">Cool Beans</string>
+    <string name="anon">Post Anonymously</string>
+    <string name="motto">Tell Stories. Ask Questions. Be Heard.</string>
+    <string name="post_as">Post as:</string>
+    <string name="password_match_check">Confirm Password</string>
+    <string name="create_profile_button_text">Submit</string>
+    <string name="email">Email</string>
+    <string name= "email_hint">email</string>
+    <string name="back_button">Back</string>
+    <string name="content">Type Comment..</string>
+
+
+    <!-- Button labels -->
+    <string name="btn_submit">Submit</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name= "remember_me">Save Login</string>
+    <string name= "spam_my_inbox">Receive email notifications \n(Can be changed under Settings)</string>
+    <string name= "i_accept">I Accept</string>
+    <string name= "register_text"> CREATE ACCOUNT</string>
+    <string name= "notification_text"> NOTIFICATIONS</string>
+    <string name ="about_you_text"> ABOUT YOU</string>
+    <string name = "char_limit_hint">50 char limit</string>
+    <string name = "about_you_prompt">\nThis will be displayed next to your username each time you post</string>
+    <string name = "about_you_hint">EX:  <i>1st year Interpretive Dance Major</i></string>
+    <string	name = "to_login_screen_btn">Cancel</string>
+	<string	name = "gender_prompt">Select your gender</string>
+	<string name = "male_text">Male</string>
+	<string name = "female_text">Female</string>
+	<string name="asterisk">***</string>
+	
+</resources>

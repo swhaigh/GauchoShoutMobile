@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dark"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/hash_tag_name"
+        android:textColor="@color/button_color"
+        android:drawableBottom="@drawable/gs"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/motto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:text="@string/motto"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- Username Entry -->
+
+    <EditText
+        android:id="@+id/login_username_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:hint="@string/username_hint"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp" />
+
+    <!-- Password Entry -->
+
+    <EditText
+        android:id="@+id/login_password_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <!-- Login Button -->
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@color/button_color"
+        android:text="@string/login_btn_text" />
+
+    <!-- New User Button -->
+
+    <Button
+        android:id="@+id/newuser_btn"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@color/button_color"
+        android:text="@string/new_usr_text" />
+
+    <!-- Under the login button, maybe we can put sponsor advertisements -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

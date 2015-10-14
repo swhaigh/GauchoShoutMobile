@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+    
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+
+
+     <requestFocus />
+      <EditText
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minHeight="150dp"
+        android:gravity="top"
+        android:hint="@string/content"
+        android:ems="10" />
+    
+      
+
+      <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="@string/btn_submit"  />
+      
+      <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="@string/btn_cancel"   />
+
+        <requestFocus />
+</LinearLayout>
+    
+</ScrollView>
